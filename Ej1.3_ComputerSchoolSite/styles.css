@@ -37,9 +37,9 @@ h1 {
 
 /* MENU */
 
-.box-menu {
-    /* height: 50px; */
-}
+/* .box-menu {
+    height: 50px;
+} */
 
 ul {
     list-style-type: none;
@@ -71,8 +71,6 @@ li {
 /* FRONTAL PHOTO */
 
 .box-img-frontal {
-    /* height: 300px; */
-    /* padding-top: 100px; */
     height: 300px; 
     overflow: hidden; 
 }
