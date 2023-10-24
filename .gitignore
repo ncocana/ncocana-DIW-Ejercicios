@@ -5,3 +5,6 @@
 *.rar
 *.zip
 Ej*.x*
+
+# npm
+node_modules
