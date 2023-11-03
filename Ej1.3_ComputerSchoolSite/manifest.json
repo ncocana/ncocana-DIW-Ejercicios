@@ -1,0 +1,61 @@
+{
+  "short_name": "Computer School",
+  "name": "Computer School Site",
+  "id": "/Ej1.3_ComputerSchoolSite",
+  "start_url": "/Ej1.3_ComputerSchoolSite",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#FFFFFF",
+  "description": "Website for computer school",
+  "screenshots": [
+    {
+      "src": "./img/angular.png",
+      "type": "image/png",
+      "sizes": "225x225",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "./img/fotofrontal.jpg",
+      "type": "image/jpg",
+      "sizes": "1920x1080",
+      "form_factor": "wide"
+    },
+    {
+      "src": "./img/html5.png",
+      "type": "image/png",
+      "sizes": "1200x1200",
+      "form_factor": "wide"
+    },
+    {
+      "src": "./img/icons.png",
+      "type": "image/png",
+      "sizes": "58x118",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "./img/javascript.png",
+      "type": "image/png",
+      "sizes": "300x300",
+      "form_factor": "wide"
+    },
+    {
+      "src": "./img/logo.png",
+      "type": "image/png",
+      "sizes": "308x214",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "./img/pattern.jpg",
+      "type": "image/jpg",
+      "sizes": "338x323",
+      "form_factor": "wide"
+    },
+    {
+      "src": "./img/php.png",
+      "type": "image/png",
+      "sizes": "225x225",
+      "form_factor": "wide"
+    }
+  ]
+}
