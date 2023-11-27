@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // const ConcatPlugin = require('@mcler/webpack-concat-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -43,10 +44,19 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
+        // assetModuleFilename: (pathData) => {
+        //     const filepath = path
+        //       .dirname(pathData.filename)
+        //       .split("/")
+        //       .slice(1)
+        //       .join("/");
+        //     return `${filepath}/[name].[hash][ext][query]`;
+        // },
     },
     optimization: {
       runtimeChunk: 'single',
       realContentHash: false,
+      minimize: true,
       minimizer: [
         new OptimizeCssAssetsPlugin({
           cssProcessorOptions: {
@@ -56,6 +66,14 @@ module.exports = {
             },
           },
         }),
+        new TerserPlugin({
+            terserOptions: {
+              compress: {
+                drop_console: true,
+              },
+              mangle: true,
+            },
+          }),
       ],
     },
     module: {
