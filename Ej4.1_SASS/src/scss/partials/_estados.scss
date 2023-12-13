@@ -1,0 +1,41 @@
+@use 'partials/vars';
+@use 'sass:color';
+
+p, h1, h2, h3, h4, h5, h6 {
+    @extend %estado;
+
+    text-align: justify;
+}
+
+span {
+    @extend %estado;
+}
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: calc(2.0 - ((0.2 * $i) - 0.2)) + "em";
+    }
+}
+
+%estado {
+    &.success {
+        color: vars.$estado_success;
+        background-color: darken(vars.$estado_success, 25%);
+    }
+    
+    &.warning {
+        color: vars.$estado_warning;
+        background-color: darken(vars.$estado_warning, 25%);
+    }
+    
+    &.error {
+        color: vars.$estado_error;
+        background-color: darken(vars.$estado_error, 25%);
+    }
+
+    color: vars.$estado_normal;
+    background-color: color.change(vars.$estado_normal, $lightness: 50%);
+    
+    margin: 0;
+    padding: 0;
+}

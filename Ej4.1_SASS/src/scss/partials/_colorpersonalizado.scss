@@ -1,0 +1,52 @@
+@function calcColor($color) {
+    @return calc(255 / 100 * $color);
+}
+
+@mixin color($red, $green, $blue) {
+    color: rgb(calcColor($red), calcColor($green), calcColor($blue));
+}
+
+@mixin colorbg($red, $green, $blue) {
+    background-color: rgb(calcColor($red), calcColor($green), calcColor($blue));
+}
+
+// Returns memory error.
+// @for $red from 0 through 100 {
+//     @for $green from 0 through 100 {
+//         @for $blue from 0 through 100 {
+//             .color-#{$red}-#{$green}-#{$blue} {
+//                 @include color($red, $green, $blue);
+//             }
+//             .colorbg-#{$red}-#{$green}-#{$blue} {
+//                 @include colorbg($red, $green, $blue);
+//             }
+//         }
+//     }
+// }
+
+@mixin generate_color_class($red, $green, $blue) {
+    .color-#{$red}-#{$green}-#{$blue} {
+        @include color($red, $green, $blue);
+    }
+}
+
+@mixin generate_colorbg_class($red, $green, $blue) {
+    .colorbg-#{$red}-#{$green}-#{$blue} {
+        @include colorbg($red, $green, $blue);
+    }
+}
+
+@include generate_color_class(0, 40, 100);
+@include generate_colorbg_class(50, 100, 0);
+
+@include generate_color_class(100, 100, 100);
+@include generate_colorbg_class(0, 0, 0);
+
+@include generate_color_class(50, 0, 0);
+@include generate_colorbg_class(0, 50, 0);
+
+@include generate_color_class(70, 20, 10);
+@include generate_colorbg_class(70, 20, 90);
+
+@include generate_color_class(80, 80, 80);
+@include generate_colorbg_class(10, 10, 10);
