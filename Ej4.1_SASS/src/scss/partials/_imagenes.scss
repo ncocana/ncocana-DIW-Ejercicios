@@ -7,7 +7,7 @@ img {
         animation-duration: 3s;
         @include mixin.vendor('animation-duration', 3s);
         @keyframes grayscale {
-            to {
+            50% {
                 filter: grayscale(100%);
                 @include mixin.vendor('filter', grayscale(100%));
             }
@@ -20,7 +20,7 @@ img {
         animation-duration: 3s;
         @include mixin.vendor('animation-duration', 3s);
         @keyframes blur {
-            to {
+            50% {
                 filter: blur(5px);
                 @include mixin.vendor('filter', blur(5px));
             }
@@ -33,7 +33,7 @@ img {
         animation-duration: 3s;
         @include mixin.vendor('animation-duration', 3s);
         @keyframes sepia {
-            to {
+            50% {
                 filter: sepia(100%);
                 @include mixin.vendor('filter', sepia(100%));
             }
@@ -46,7 +46,7 @@ img {
         animation-duration: 3s;
         @include mixin.vendor('animation-duration', 3s);
         @keyframes hue-rotate {
-            to {
+            50% {
                 filter: hue-rotate(150deg);
                 @include mixin.vendor('filter', hue-rotate(150deg));
             }
@@ -59,7 +59,7 @@ img {
         animation-duration: 3s;
         @include mixin.vendor('animation-duration', 3s);
         @keyframes invert {
-            to {
+            50% {
                 filter: invert(0.8);
                 @include mixin.vendor('filter', invert(0.8));
             }
@@ -72,7 +72,7 @@ img {
         animation-duration: 3s;
         @include mixin.vendor('animation-duration', 3s);
         @keyframes brightness {
-            to {
+            50% {
                 filter: brightness(0.5);
                 @include mixin.vendor('filter', brightness(0.5));
             }
@@ -85,7 +85,7 @@ img {
         animation-duration: 3s;
         @include mixin.vendor('animation-duration', 3s);
         @keyframes contrast {
-            to {
+            50% {
                 filter: contrast(2);
                 @include mixin.vendor('filter', contrast(2));
             }

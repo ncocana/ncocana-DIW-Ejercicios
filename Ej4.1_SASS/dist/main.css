@@ -106,7 +106,7 @@ img.grayscale {
   -moz-animation-duration: 3s;
 }
 @keyframes grayscale {
-  to {
+  50% {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -121,7 +121,7 @@ img.blur {
   -moz-animation-duration: 3s;
 }
 @keyframes blur {
-  to {
+  50% {
     filter: blur(5px);
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
@@ -136,7 +136,7 @@ img.sepia {
   -moz-animation-duration: 3s;
 }
 @keyframes sepia {
-  to {
+  50% {
     filter: sepia(100%);
     -webkit-filter: sepia(100%);
     -moz-filter: sepia(100%);
@@ -151,7 +151,7 @@ img.hue-rotate {
   -moz-animation-duration: 3s;
 }
 @keyframes hue-rotate {
-  to {
+  50% {
     filter: hue-rotate(150deg);
     -webkit-filter: hue-rotate(150deg);
     -moz-filter: hue-rotate(150deg);
@@ -166,7 +166,7 @@ img.invert {
   -moz-animation-duration: 3s;
 }
 @keyframes invert {
-  to {
+  50% {
     filter: invert(0.8);
     -webkit-filter: invert(0.8);
     -moz-filter: invert(0.8);
@@ -181,7 +181,7 @@ img.brightness {
   -moz-animation-duration: 3s;
 }
 @keyframes brightness {
-  to {
+  50% {
     filter: brightness(0.5);
     -webkit-filter: brightness(0.5);
     -moz-filter: brightness(0.5);
@@ -196,7 +196,7 @@ img.contrast {
   -moz-animation-duration: 3s;
 }
 @keyframes contrast {
-  to {
+  50% {
     filter: contrast(2);
     -webkit-filter: contrast(2);
     -moz-filter: contrast(2);
