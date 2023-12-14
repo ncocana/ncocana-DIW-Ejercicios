@@ -4,8 +4,6 @@ img {
     &.grayscale {
         animation-name: grayscale;
         @include mixin.vendor('animation-name', grayscale);
-        animation-duration: 3s;
-        @include mixin.vendor('animation-duration', 3s);
         @keyframes grayscale {
             50% {
                 filter: grayscale(100%);
@@ -17,8 +15,6 @@ img {
     &.blur {
         animation-name: blur;
         @include mixin.vendor('animation-name', blur);
-        animation-duration: 3s;
-        @include mixin.vendor('animation-duration', 3s);
         @keyframes blur {
             50% {
                 filter: blur(5px);
@@ -30,8 +26,6 @@ img {
     &.sepia {
         animation-name: sepia;
         @include mixin.vendor('animation-name', sepia);
-        animation-duration: 3s;
-        @include mixin.vendor('animation-duration', 3s);
         @keyframes sepia {
             50% {
                 filter: sepia(100%);
@@ -43,8 +37,6 @@ img {
     &.hue-rotate {
         animation-name: hue-rotate;
         @include mixin.vendor('animation-name', hue-rotate);
-        animation-duration: 3s;
-        @include mixin.vendor('animation-duration', 3s);
         @keyframes hue-rotate {
             50% {
                 filter: hue-rotate(150deg);
@@ -56,8 +48,6 @@ img {
     &.invert {
         animation-name: invert;
         @include mixin.vendor('animation-name', invert);
-        animation-duration: 3s;
-        @include mixin.vendor('animation-duration', 3s);
         @keyframes invert {
             50% {
                 filter: invert(0.8);
@@ -69,8 +59,6 @@ img {
     &.brightness {
         animation-name: brightness;
         @include mixin.vendor('animation-name', brightness);
-        animation-duration: 3s;
-        @include mixin.vendor('animation-duration', 3s);
         @keyframes brightness {
             50% {
                 filter: brightness(0.5);
@@ -82,14 +70,19 @@ img {
     &.contrast {
         animation-name: contrast;
         @include mixin.vendor('animation-name', contrast);
-        animation-duration: 3s;
-        @include mixin.vendor('animation-duration', 3s);
         @keyframes contrast {
             50% {
                 filter: contrast(2);
                 @include mixin.vendor('filter', contrast(2));
             }
         }
+    }
+
+    &.grayscale, &.blur, &.sepia, &.hue-rotate, &.invert, &.brightness, &.contrast {
+        animation-duration: 3s;
+        @include mixin.vendor('animation-duration', 3s);
+        animation-iteration-count: infinite;
+        @include mixin.vendor('animation-iteration-count', 'infinite');
     }
 
     border-radius: 45%;

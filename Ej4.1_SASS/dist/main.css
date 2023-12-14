@@ -10709,9 +10709,6 @@ img.grayscale {
   animation-name: grayscale;
   -webkit-animation-name: grayscale;
   -moz-animation-name: grayscale;
-  animation-duration: 3s;
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
 }
 @keyframes grayscale {
   50% {
@@ -10724,9 +10721,6 @@ img.blur {
   animation-name: blur;
   -webkit-animation-name: blur;
   -moz-animation-name: blur;
-  animation-duration: 3s;
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
 }
 @keyframes blur {
   50% {
@@ -10739,9 +10733,6 @@ img.sepia {
   animation-name: sepia;
   -webkit-animation-name: sepia;
   -moz-animation-name: sepia;
-  animation-duration: 3s;
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
 }
 @keyframes sepia {
   50% {
@@ -10754,9 +10745,6 @@ img.hue-rotate {
   animation-name: hue-rotate;
   -webkit-animation-name: hue-rotate;
   -moz-animation-name: hue-rotate;
-  animation-duration: 3s;
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
 }
 @keyframes hue-rotate {
   50% {
@@ -10769,9 +10757,6 @@ img.invert {
   animation-name: invert;
   -webkit-animation-name: invert;
   -moz-animation-name: invert;
-  animation-duration: 3s;
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
 }
 @keyframes invert {
   50% {
@@ -10784,9 +10769,6 @@ img.brightness {
   animation-name: brightness;
   -webkit-animation-name: brightness;
   -moz-animation-name: brightness;
-  animation-duration: 3s;
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
 }
 @keyframes brightness {
   50% {
@@ -10799,9 +10781,6 @@ img.contrast {
   animation-name: contrast;
   -webkit-animation-name: contrast;
   -moz-animation-name: contrast;
-  animation-duration: 3s;
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
 }
 @keyframes contrast {
   50% {
@@ -10809,4 +10788,12 @@ img.contrast {
     -webkit-filter: contrast(2);
     -moz-filter: contrast(2);
   }
+}
+img.grayscale, img.blur, img.sepia, img.hue-rotate, img.invert, img.brightness, img.contrast {
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
 }
