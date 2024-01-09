@@ -1,0 +1,30 @@
+
+.kittens {
+  overflow: auto;
+  list-style-type: none;
+  padding: 0;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  li {
+    border-radius: $border-radius;
+    float: left;
+    // margin-bottom: 2em;
+    text-align: center;
+    width: $kitten-width;
+    flex: 1 0 21%;
+    margin: 1em;
+
+  }
+
+  img {
+    border: $border-width solid $white;
+    border-radius: $border-radius;
+  }
+
+  label { font-weight: bold; }
+}
+

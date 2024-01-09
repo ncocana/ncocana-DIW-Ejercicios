@@ -1,0 +1,49 @@
+// USE
+// 1. Top App Bar
+@use "@material/icon-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
+
+
+// 2. Tab Bar + Tab Scroller
+@use "@material/tab-bar/mdc-tab-bar";
+@use "@material/tab-scroller/mdc-tab-scroller";
+@use "@material/tab-indicator/mdc-tab-indicator";
+@use "@material/tab/mdc-tab";
+
+// 3. Layout Grid
+@use "@material/layout-grid/mdc-layout-grid";
+
+// 4. Card
+@use "@material/card";
+
+
+// IMPORT
+// 1. Top App Bar
+@import "@material/icon-button/mdc-icon-button";
+
+// 3. Layout Grid
+.gridFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// 4. Card
+@include card.core-styles;
+@import "@material/card/mdc-card";
+
+.cardContent {
+    padding: 10px;
+    font-size: 16px;
+}
+
+// Others/Original Kittens
+@import "partials/vars";
+
+@import "partials/base";
+
+@import "partials/header";
+@import "partials/content";
+@import "partials/subcontent";
+@import "partials/footer";
