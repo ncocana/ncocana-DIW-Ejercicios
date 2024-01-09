@@ -21,7 +21,6 @@ const tabBar = new MDCTabBar(document.querySelector('.mdc-tab-bar'));
 
 // 4. Card
 import {MDCRipple} from '@material/ripple';
-// import FavoriteIcon from '@material-ui/icons/Favorite';
 
 const selector = '.mdc-button, .mdc-icon-button, .mdc-card__primary-action';
 const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
