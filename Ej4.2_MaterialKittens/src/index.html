@@ -13,34 +13,63 @@
     
   </head>
   <body>
-    <header class="mdc-top-app-bar header" style="flex-direction: row;">
-        <div class="mdc-tab-bar" role="tablist">
-            <div class="mdc-tab-scroller">
-                <div class="mdc-tab-scroller__scroll-area">
-                    <div class="mdc-tab-scroller__scroll-content">
-                        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                            <div class="mdc-top-app-bar__row">
-                                <h1 class="mdc-top-app-bar__title">Kittens "R" Us</h1>
-                            </div>
-                        </section>
-
-                        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-                            <nav class="navigation" aria-label="navigation">
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="kittens.html">Kittens</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </section>
+    <header class="mdc-top-app-bar" style="background-color: transparent;">
+        <div class="mdc-top-app-bar__row header">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                    <h1 class="mdc-top-app-bar__title" style="overflow: visible;">Kittens "R" Us</h1>
+            </section>
+        </div>
+        <div class="mdc-top-app-bar__row" style="background-color: transparent;">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start" style="padding: 0; align-items: flex-start;">
+                <div class="mdc-tab-bar nav" role="tablist">
+                    <div class="mdc-tab-scroller">
+                      <div class="mdc-tab-scroller__scroll-area">
+                        <div class="mdc-tab-scroller__scroll-content">
+                          <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                              <span class="mdc-tab__text-label"><a href="#">Home</a></span>
+                            </span>
+                            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                          </button>
+                          <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                              <span class="mdc-tab__text-label"><a href="kittens.html">Kittens</a></span>
+                            </span>
+                            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                          </button>
+                          <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                              <span class="mdc-tab__text-label"><a href="about.html">About</a></span>
+                            </span>
+                            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                          </button>
+                          <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                              <span class="mdc-tab__text-label"><a href="contact.html">Contact</a></span>
+                            </span>
+                            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                          </button>
+                        </div>
+                      </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </header>
 
-    <main class="mdc-top-app-bar--fixed-adjust" style="padding-top: 100px;">
+    <main class="mdc-top-app-bar--fixed-adjust" style="padding-top: 150px;">
         <div class="mdc-layout-grid">
         <div class="mdc-layout-grid__inner" style="grid-template-columns: repeat(2,minmax(0,1fr));">
             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2 gridFlex">
