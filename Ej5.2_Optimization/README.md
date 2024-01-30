@@ -3,6 +3,7 @@
 - [Optimización](#optimización)
   - [Enunciado](#enunciado)
   - [10 optimizaciones que podrían realizarse en la página web](#10-optimizaciones-que-podrían-realizarse-en-la-página-web)
+  - [Términos](#términos)
 
 ## Enunciado
 
@@ -21,3 +22,10 @@ La página web ARNGREN [http://www.arngren.net/](http://www.arngren.net/) es una
 9. Utilizar una política de caché para almacenar los assets estáticos y aumentar la velocidad de carga al volver a visitar la página.
 10. Usar formatos para las imagenes como WebP o AVIF para aumentar la velocidad de descarga y reducir el consumo de datos.
 11. No superponer una imagen estática con multiples GIFs para crear la ilusión de una sola imagen.
+
+## Términos
+
+- FCP (Fist Contentful Paint): mide el tiempo desde que el usuario entra hasta que se renderiza el primer contenido. (< 1.8s)
+- TBT (Tiempo de bloqueo total): después del FCP, cuánto tiempo está bloqueada la web.
+- UCP (Largest Contentful Paint): rapidez con la que se carga el contenido principal de la web. (< 2.5s)
+- 
