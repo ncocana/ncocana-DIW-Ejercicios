@@ -28,4 +28,3 @@ La página web ARNGREN [http://www.arngren.net/](http://www.arngren.net/) es una
 - FCP (Fist Contentful Paint): mide el tiempo desde que el usuario entra hasta que se renderiza el primer contenido. (< 1.8s)
 - TBT (Tiempo de bloqueo total): después del FCP, cuánto tiempo está bloqueada la web.
 - UCP (Largest Contentful Paint): rapidez con la que se carga el contenido principal de la web. (< 2.5s)
-- 
