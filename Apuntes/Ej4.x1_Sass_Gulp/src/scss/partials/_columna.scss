@@ -1,0 +1,13 @@
+@use 'partials/vars';
+
+// .col1 {
+//     float: left;
+//     width: 8,3%;
+// }
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        float: left;
+        width: calc(100% / vars.$num_col * $i);
+    }
+}

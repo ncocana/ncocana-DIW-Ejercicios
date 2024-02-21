@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Fonts';
+    src: url('./LostEmerald.otf') format('otf'),
+            url('./OpenSans-Bold.woff') format('woff'),
+            url('./OpenSans-Bold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.hello {
+    color: rgb(0, 200, 255);
+    font-family: 'Fonts';
+    background: url('./favicon.jpeg');
+}

@@ -1,0 +1,32 @@
+{
+  "short_name": "Computer School",
+  "name": "Computer School Site",
+  "icons": [
+    {
+      "src": "./img/coffee.png",
+      "type": "image/png",
+      "sizes": "640x640"
+    }
+  ],
+  "id": "/Ej1.3_ComputerSchoolSite",
+  "start_url": "/Ej1.3_ComputerSchoolSite",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#FFFFFF",
+  "description": "Website for computer school",
+  "screenshots": [
+    {
+      "src": "./img/screenshot.png",
+      "type": "image/png",
+      "sizes": "636x817",
+      "form_factor": "wide"
+    },
+    {
+      "src": "./img/screenshot2.png",
+      "type": "image/png",
+      "sizes": "1287x882",
+      "form_factor": "narrow"
+    }
+  ]
+}

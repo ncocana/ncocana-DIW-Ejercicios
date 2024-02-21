@@ -4,7 +4,7 @@
 # Other files
 *.rar
 *.zip
-Ej*.x*
+# Ej*.x*
 
 # npm
 node_modules

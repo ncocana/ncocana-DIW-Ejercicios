@@ -1,0 +1,1 @@
+var prueba="hello",prueba2="world";function prueba(){print("hola")}

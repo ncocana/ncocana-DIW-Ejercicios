@@ -1,0 +1,6 @@
+@use 'partials/vars';
+
+.inverse {
+    background-color: vars.$primary-color;
+    color: white;
+}

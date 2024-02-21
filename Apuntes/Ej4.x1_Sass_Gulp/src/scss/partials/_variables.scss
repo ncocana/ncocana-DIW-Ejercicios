@@ -1,0 +1,31 @@
+@use 'partials/vars';
+
+body {
+  font: 100% vars.$font-stack;
+  color: vars.$primary-color;
+}
+
+.header {
+    background-color: vars.$header-color;
+    padding: 5px;
+}
+
+.menu {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        background-color: vars.$menu-li-background-color;
+        color: vars.$menu-li-color;
+        margin: 8px;
+        padding: 8px;
+        box-shadow: 5px 5px 5px grey;
+    }
+
+    li:hover {
+        background-color: vars.$menu-li-background-color-hover;
+    }
+}
